@@ -1,9 +1,12 @@
 {
   "name": "automated-testing-app",
+  "homepage": "https://NafisaMehreen.github.io/boilerplate-mochachai",
   "version": "0.0.1",
   "description": "Boilerplate for the Quality Assurance and Testing with Chai challenges",
   "main": "server.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build", 
     "start": "node server.js"
   },
   "dependencies": {
@@ -15,5 +18,8 @@
     "mocha": "9.0.3",
     "zombie": "6.1.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
 }
